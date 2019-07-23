@@ -1,0 +1,647 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2229284822E70C30008A9E40 /* HuliPizzaPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = 2229284722E70C30008A9E40 /* HuliPizzaPayload.apns */; };
+		2229285022E70DFE008A9E40 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229284F22E70DFE008A9E40 /* NotificationService.swift */; };
+		2229285422E70DFE008A9E40 /* PushHuliPizzaServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2229284D22E70DFD008A9E40 /* PushHuliPizzaServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2229286022E711E9008A9E40 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2229285F22E711E9008A9E40 /* UserNotifications.framework */; };
+		2229286222E711E9008A9E40 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2229286122E711E9008A9E40 /* UserNotificationsUI.framework */; };
+		2229286522E711E9008A9E40 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229286422E711E9008A9E40 /* NotificationViewController.swift */; };
+		2229286822E711E9008A9E40 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2229286622E711E9008A9E40 /* MainInterface.storyboard */; };
+		2229286C22E711E9008A9E40 /* PushHuliPizzaContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2229285D22E711E9008A9E40 /* PushHuliPizzaContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		22785CEE22E5E9600041DE22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22785CED22E5E9600041DE22 /* AppDelegate.swift */; };
+		22785CF022E5E9600041DE22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22785CEF22E5E9600041DE22 /* ViewController.swift */; };
+		22785CF322E5E9600041DE22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22785CF122E5E9600041DE22 /* Main.storyboard */; };
+		22785CF522E5E9630041DE22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22785CF422E5E9630041DE22 /* Assets.xcassets */; };
+		22785CF822E5E9630041DE22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22785CF622E5E9630041DE22 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2229285222E70DFE008A9E40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22785CE222E5E9600041DE22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2229284C22E70DFD008A9E40;
+			remoteInfo = PushHuliPizzaServiceExtension;
+		};
+		2229286A22E711E9008A9E40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22785CE222E5E9600041DE22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2229285C22E711E9008A9E40;
+			remoteInfo = PushHuliPizzaContentExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2229285822E70DFE008A9E40 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2229285422E70DFE008A9E40 /* PushHuliPizzaServiceExtension.appex in Embed App Extensions */,
+				2229286C22E711E9008A9E40 /* PushHuliPizzaContentExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2229284722E70C30008A9E40 /* HuliPizzaPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = HuliPizzaPayload.apns; sourceTree = "<group>"; };
+		2229284D22E70DFD008A9E40 /* PushHuliPizzaServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PushHuliPizzaServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2229284F22E70DFE008A9E40 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		2229285122E70DFE008A9E40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2229285D22E711E9008A9E40 /* PushHuliPizzaContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PushHuliPizzaContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2229285F22E711E9008A9E40 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		2229286122E711E9008A9E40 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		2229286422E711E9008A9E40 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		2229286722E711E9008A9E40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		2229286922E711E9008A9E40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22785CEA22E5E9600041DE22 /* PushHuliPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushHuliPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22785CED22E5E9600041DE22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22785CEF22E5E9600041DE22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22785CF222E5E9600041DE22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22785CF422E5E9630041DE22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22785CF722E5E9630041DE22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22785CF922E5E9630041DE22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22785CFF22E5E9A50041DE22 /* PushHuliPizza.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushHuliPizza.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2229284A22E70DFD008A9E40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2229285A22E711E9008A9E40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2229286222E711E9008A9E40 /* UserNotificationsUI.framework in Frameworks */,
+				2229286022E711E9008A9E40 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22785CE722E5E9600041DE22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2229284E22E70DFE008A9E40 /* PushHuliPizzaServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				2229284F22E70DFE008A9E40 /* NotificationService.swift */,
+				2229285122E70DFE008A9E40 /* Info.plist */,
+			);
+			path = PushHuliPizzaServiceExtension;
+			sourceTree = "<group>";
+		};
+		2229285E22E711E9008A9E40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2229285F22E711E9008A9E40 /* UserNotifications.framework */,
+				2229286122E711E9008A9E40 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2229286322E711E9008A9E40 /* PushHuliPizzaContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				2229286422E711E9008A9E40 /* NotificationViewController.swift */,
+				2229286622E711E9008A9E40 /* MainInterface.storyboard */,
+				2229286922E711E9008A9E40 /* Info.plist */,
+			);
+			path = PushHuliPizzaContentExtension;
+			sourceTree = "<group>";
+		};
+		22785CE122E5E9600041DE22 = {
+			isa = PBXGroup;
+			children = (
+				22785CEC22E5E9600041DE22 /* PushHuliPizza */,
+				2229284E22E70DFE008A9E40 /* PushHuliPizzaServiceExtension */,
+				2229286322E711E9008A9E40 /* PushHuliPizzaContentExtension */,
+				2229285E22E711E9008A9E40 /* Frameworks */,
+				22785CEB22E5E9600041DE22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22785CEB22E5E9600041DE22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22785CEA22E5E9600041DE22 /* PushHuliPizza.app */,
+				2229284D22E70DFD008A9E40 /* PushHuliPizzaServiceExtension.appex */,
+				2229285D22E711E9008A9E40 /* PushHuliPizzaContentExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22785CEC22E5E9600041DE22 /* PushHuliPizza */ = {
+			isa = PBXGroup;
+			children = (
+				22785CFF22E5E9A50041DE22 /* PushHuliPizza.entitlements */,
+				22785CED22E5E9600041DE22 /* AppDelegate.swift */,
+				22785CEF22E5E9600041DE22 /* ViewController.swift */,
+				22785CF122E5E9600041DE22 /* Main.storyboard */,
+				22785CF422E5E9630041DE22 /* Assets.xcassets */,
+				22785CF622E5E9630041DE22 /* LaunchScreen.storyboard */,
+				22785CF922E5E9630041DE22 /* Info.plist */,
+				2229284722E70C30008A9E40 /* HuliPizzaPayload.apns */,
+			);
+			path = PushHuliPizza;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2229284C22E70DFD008A9E40 /* PushHuliPizzaServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2229285522E70DFE008A9E40 /* Build configuration list for PBXNativeTarget "PushHuliPizzaServiceExtension" */;
+			buildPhases = (
+				2229284922E70DFD008A9E40 /* Sources */,
+				2229284A22E70DFD008A9E40 /* Frameworks */,
+				2229284B22E70DFD008A9E40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PushHuliPizzaServiceExtension;
+			productName = PushHuliPizzaServiceExtension;
+			productReference = 2229284D22E70DFD008A9E40 /* PushHuliPizzaServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		2229285C22E711E9008A9E40 /* PushHuliPizzaContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2229286D22E711E9008A9E40 /* Build configuration list for PBXNativeTarget "PushHuliPizzaContentExtension" */;
+			buildPhases = (
+				2229285922E711E9008A9E40 /* Sources */,
+				2229285A22E711E9008A9E40 /* Frameworks */,
+				2229285B22E711E9008A9E40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PushHuliPizzaContentExtension;
+			productName = PushHuliPizzaContentExtension;
+			productReference = 2229285D22E711E9008A9E40 /* PushHuliPizzaContentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		22785CE922E5E9600041DE22 /* PushHuliPizza */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22785CFC22E5E9630041DE22 /* Build configuration list for PBXNativeTarget "PushHuliPizza" */;
+			buildPhases = (
+				22785CE622E5E9600041DE22 /* Sources */,
+				22785CE722E5E9600041DE22 /* Frameworks */,
+				22785CE822E5E9600041DE22 /* Resources */,
+				2229285822E70DFE008A9E40 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2229285322E70DFE008A9E40 /* PBXTargetDependency */,
+				2229286B22E711E9008A9E40 /* PBXTargetDependency */,
+			);
+			name = PushHuliPizza;
+			productName = PushHuliPizza;
+			productReference = 22785CEA22E5E9600041DE22 /* PushHuliPizza.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22785CE222E5E9600041DE22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = macOS;
+				TargetAttributes = {
+					2229284C22E70DFD008A9E40 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					2229285C22E711E9008A9E40 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					22785CE922E5E9600041DE22 = {
+						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 22785CE522E5E9600041DE22 /* Build configuration list for PBXProject "PushHuliPizza" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22785CE122E5E9600041DE22;
+			productRefGroup = 22785CEB22E5E9600041DE22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22785CE922E5E9600041DE22 /* PushHuliPizza */,
+				2229284C22E70DFD008A9E40 /* PushHuliPizzaServiceExtension */,
+				2229285C22E711E9008A9E40 /* PushHuliPizzaContentExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2229284B22E70DFD008A9E40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2229285B22E711E9008A9E40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2229286822E711E9008A9E40 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22785CE822E5E9600041DE22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22785CF822E5E9630041DE22 /* LaunchScreen.storyboard in Resources */,
+				22785CF522E5E9630041DE22 /* Assets.xcassets in Resources */,
+				22785CF322E5E9600041DE22 /* Main.storyboard in Resources */,
+				2229284822E70C30008A9E40 /* HuliPizzaPayload.apns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2229284922E70DFD008A9E40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2229285022E70DFE008A9E40 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2229285922E711E9008A9E40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2229286522E711E9008A9E40 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22785CE622E5E9600041DE22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22785CF022E5E9600041DE22 /* ViewController.swift in Sources */,
+				22785CEE22E5E9600041DE22 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2229285322E70DFE008A9E40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2229284C22E70DFD008A9E40 /* PushHuliPizzaServiceExtension */;
+			targetProxy = 2229285222E70DFE008A9E40 /* PBXContainerItemProxy */;
+		};
+		2229286B22E711E9008A9E40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2229285C22E711E9008A9E40 /* PushHuliPizzaContentExtension */;
+			targetProxy = 2229286A22E711E9008A9E40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2229286622E711E9008A9E40 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2229286722E711E9008A9E40 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		22785CF122E5E9600041DE22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22785CF222E5E9600041DE22 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22785CF622E5E9630041DE22 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22785CF722E5E9630041DE22 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2229285622E70DFE008A9E40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3H5CWU86ZN;
+				INFOPLIST_FILE = PushHuliPizzaServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.steemmnf.PushHuliPizza.PushHuliPizzaServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2229285722E70DFE008A9E40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3H5CWU86ZN;
+				INFOPLIST_FILE = PushHuliPizzaServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.steemmnf.PushHuliPizza.PushHuliPizzaServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2229286E22E711E9008A9E40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3H5CWU86ZN;
+				INFOPLIST_FILE = PushHuliPizzaContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.steemmnf.PushHuliPizza.PushHuliPizzaContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2229286F22E711E9008A9E40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3H5CWU86ZN;
+				INFOPLIST_FILE = PushHuliPizzaContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.steemmnf.PushHuliPizza.PushHuliPizzaContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		22785CFA22E5E9630041DE22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22785CFB22E5E9630041DE22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22785CFD22E5E9630041DE22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushHuliPizza/PushHuliPizza.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3H5CWU86ZN;
+				INFOPLIST_FILE = PushHuliPizza/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.steemmnf.PushHuliPizza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22785CFE22E5E9630041DE22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushHuliPizza/PushHuliPizza.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3H5CWU86ZN;
+				INFOPLIST_FILE = PushHuliPizza/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.steemmnf.PushHuliPizza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2229285522E70DFE008A9E40 /* Build configuration list for PBXNativeTarget "PushHuliPizzaServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2229285622E70DFE008A9E40 /* Debug */,
+				2229285722E70DFE008A9E40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2229286D22E711E9008A9E40 /* Build configuration list for PBXNativeTarget "PushHuliPizzaContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2229286E22E711E9008A9E40 /* Debug */,
+				2229286F22E711E9008A9E40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22785CE522E5E9600041DE22 /* Build configuration list for PBXProject "PushHuliPizza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22785CFA22E5E9630041DE22 /* Debug */,
+				22785CFB22E5E9630041DE22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22785CFC22E5E9630041DE22 /* Build configuration list for PBXNativeTarget "PushHuliPizza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22785CFD22E5E9630041DE22 /* Debug */,
+				22785CFE22E5E9630041DE22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22785CE222E5E9600041DE22 /* Project object */;
+}
